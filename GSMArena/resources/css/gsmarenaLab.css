@@ -1,0 +1,126 @@
+#topAdv, .ad-c-label {
+	height: 90px; overflow: hidden; padding: 0; margin: 0;
+}
+
+ #lab-list li {
+
+    width: 100%;
+
+    display: block;
+
+    clear:both;
+
+    overflow: hidden;
+
+    margin: 10px 0;
+ 
+                border: 1px solid #D6CDD0;
+
+  }
+
+        #lab-list li:hover {
+
+                border: 1px solid #B23F33;
+
+        }
+
+
+
+  #lab-list li a {
+
+    display: block;
+
+    position: relative;
+
+  }
+
+        #lab-list li a:hover {
+
+                color:#4B3C23;
+
+        }
+
+  #lab-list li img {
+
+    float: left;
+
+    width: 100px;
+
+    top: 2px;
+
+    position: relative;
+
+  }
+
+  #lab-list li h3, #lab-list li p {
+
+
+
+    /* for borders */
+
+    float: left;
+
+    width: 430px;
+
+    margin: 0;
+
+                padding: 0;
+  }
+
+  #lab-list li h3 {
+                
+                color: #B23F33;
+
+                font: normal 18px 'Oswald', Arial, sans-serif;
+
+                padding-top: 3px;
+
+  }
+
+  #lab-list li p {
+
+                padding-bottom: 3px;
+
+  }
+
+#user-comments, .user-thread, .uavata, .avatar-box {
+	background-color: #549fc8;
+}
+
+#user-thread, .user-thread, .uavata, .avatar-box {
+	background-color: #71a273;
+}
+
+
+#user-thread, .user-thread, .uavata, .avatar-box {
+	background-color: #806cb1;
+}
+
+#div-gpt-ad-300x250atfgsmarenadesktop-0 {
+	height:250px; width:300px;
+}
+
+#div-gpt-ad-300x250mid-left-mpugsmarenadesktop-0 {
+	height:250px; width:300px;
+}
+
+#div-gpt-ad-300x600btfgsmarenadesktop-0 {
+	height:600px; width:300px;
+}
+
+  #unic-gdpr {
+  	display:none;cursor:pointer;
+  }
+
+  #unic-ccpa {
+  	display:none;cursor:pointer;
+  }
+
+  
+.image-gallery{
+  display: none;
+}
+
+.map {
+  display: none;
+}

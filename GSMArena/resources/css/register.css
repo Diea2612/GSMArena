@@ -1,0 +1,92 @@
+/* Inline Styles */
+#div-gpt-ad-gsmarenacom35723 {
+    height: 90px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-count {
+    right: 4px;
+}
+
+.icon-count.new {
+    top: 3px;
+    right: 5px;
+}
+
+/* Classes */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper.clearfix {
+    clear: both;
+}
+
+.top-bar.clearfix {
+    clear: both;
+}
+
+.lines-button.minus.open {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.head-icon {
+    font-family: "icomoon";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* add other icon styles as needed */
+}
+
+/* Placeholder styles for the icons (you may need to replace them with your own font-face rules) */
+.icon-soc-youtube,
+.icon-instagram,
+.icon-soc-rss2,
+.icon-specs-car,
+.icon-cart,
+.icon-login,
+.icon-user-plus,
+.icon-search-right,
+.icon-mobile-phone231,
+.icon-rumored {
+    /* Add specific styles for each icon here */
+}
+
+/* Additional classes from the HTML */
+.main-menu-list.open {
+    display: block;
+}
+
+.review-background {
+    background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/glossary-hlr.jpg');
+    background-size: 100%;
+}
+
+.main.main-review.l-box.col.float-right {
+    float: right;
+}
+
+.autocomplete-hide {
+    display: none;
+}
+
+.ad-c-label {
+    font-size: 12px;
+    color: #999;
+}
+
+.article-info-line.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+/* And so on... */

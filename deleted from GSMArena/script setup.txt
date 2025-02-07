@@ -1,0 +1,86 @@
+
+<!-- <script setup>
+import { onMounted, ref } from "vue";
+import axios from "axios"; // Ensure axios is imported
+
+// Reactive references
+let site = ref([]);
+let isLoading = ref(true);
+let error = ref(null);
+
+// Fetch site data on component mount
+onMounted(async () => {
+  await getSite();
+});
+
+// Function to fetch site data
+const getSite = async () => {
+  try {
+    const response = await axios.get("/api/getSite");
+    site.value = response.data; // Assuming the response data is an array
+    console.log('response', response);
+  } catch (err) {
+    error.value = 'Failed to fetch site data: ' + err.message; // Handle errors
+    console.error(error.value);
+  } finally {
+    isLoading.value = false; // Set loading to false after the request completes
+  }
+};
+</script> -->
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+ <script setup>
+import { onMounted, ref } from 'vue';
+import axios from 'axios';
+
+// Declare a reactive reference to hold the data
+const data = ref([]);
+const loading = ref(true);
+const error = ref(null);
+
+// Function to fetch data from an API
+const fetchData = async () => {
+  try {
+    // Replace 'https://api.example.com/data' with the actual API endpoint
+    const response = await axios.get('https://api.example.com/data');
+    data.value = response.data; // Store the fetched data
+  } catch (err) {
+    error.value = 'An error occurred while fetching data';
+  } finally {
+    loading.value = false;
+  }
+};
+
+// Use onMounted to trigger the data fetch when the component is mounted
+onMounted(() => {
+  fetchData();
+});
+
+// import { ref } from 'vue';
+
+// // Define reactive properties for email and password
+// const email = ref('');
+// const password = ref('');
+
+// // Handle form submission
+// const submitForm = () => {
+//   // Log the email and password or make an API request
+//   console.log('Email:', email.value);
+//   console.log('Password:', password.value);
+
+  // Example: Submit the form using axios or fetch
+  // axios.post('https://www.gsmarena.com/login.php3', {
+  //   sEmail: email.value,
+  //   sPassword: password.value,
+  //   sSource: 'MA=='
+  // }).then(response => {
+  //   console.log('Login successful:', response);
+  // }).catch(error => {
+  //   console.error('Login error:', error);
+  // });
+};
+
+</script>
+

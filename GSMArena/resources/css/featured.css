@@ -1,0 +1,74 @@
+ /* Style featured page css  */
+
+ .review-background {
+     background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/news-hlr.jpg');
+     background-size: 100%;
+ }
+
+ .icon-count {
+     position: absolute;
+     right: 4px;
+ }
+
+ .module-phones-link img {
+     width: 100px; /* Adjust as needed */
+     height: auto;
+ }
+
+ .image-gallery {
+     display: none;
+ }
+
+ .top-row, .bottom-row, .left-column, .right-column, .multipic {
+     display: flex;
+ }
+
+ .gbutton {
+     cursor: pointer;
+ }
+
+ .autocomplete-hide {
+     display: none;
+ }
+
+ .autocomplete-search {
+     position: relative;
+ }
+
+ .autocomplete-small {
+     font-size: small;
+ }
+
+ .permanent {
+     display: none;
+ }
+
+ .search-buttons {
+     display: none;
+ }
+
+ #div-gpt-ad-300x250atfgsmarenadesktop-0,
+ #div-gpt-ad-300x600btfgsmarenadesktop-0 {
+     height: 250px;
+     width: 300px;
+ }
+
+ #div-gpt-ad-300x600btfgsmarenadesktop-0 {
+     height: 600px;
+ }
+
+ #unic-gdpr,
+ #unic-ccpa {
+     display: none;
+     cursor: pointer;
+ }
+
+ img[style*="display: none"] {
+     display: none !important;
+     width: 1px !important;
+     height: 1px !important;
+ }
+
+ .submit.button.button-small {
+     top: -3px;
+ }

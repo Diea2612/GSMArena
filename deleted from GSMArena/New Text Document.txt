@@ -1,0 +1,425 @@
+
+
+<<div style="text-align:center;font-family:'Shadows Into Light', cursive"><span style="color:rgb(51, 221, 255 );text-shadow:0px 0px 15px"><strong>Hello Darkness, My Old Friend</strong></span><br> <br><br>
+
+<span style="color:rgb(51, 221, 255 );text-shadow:0px 0px 15px"><strong>Yo!</strong></span><br> 
+<style>
+    .hover-effect {
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 15px;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+        color: rgb(0, 51, 102); /* Dark purple */
+        text-shadow: 0px 0px 25px rgba(0, 128, 255, 0.8); /* Enhanced shadow on hover */
+    }
+
+    
+</style>
+
+<style>.css-wexxj8 {background: rgb(0, 51, 102) !important;}</style>
+
+
+<span style="color:rgb(51, 221, 255);text-shadow:0px 0px 15px">
+    <strong>Please follow me if you enjoy my work. My name is 
+        <span class="hover-effect">ShadowReaper</span>. Do not report me either.</strong>
+</span><br><br><br>
+</div>
+
+
+<style>
+/* Import Shadows Into Light font */
+
+
+/* DropDown Menu */
+a:link {
+    color: #ffffff; /* White color for unvisited links */
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+a:visited {
+    color: #e0e0eb; /* Light gray for visited links */
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+a:hover {
+    color: #003366; /* Dark purple for mouse-over links */
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+a:active {
+    color: #66b2ff; /* Light purple for selected links */
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+/* Profile Card */
+.css-1uodvt1, .css-c9kgt6, .css-1bg6huh {
+    padding: 30px;
+    flex-direction: column;
+      justify-items: center;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+     color:rgb(51, 221, 255 );text-shadow:0px 0px 15px;
+}
+
+.css-ej77he {
+padding: 0.5px;
+    flex-direction: column;
+      justify-items: center;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+.css-1ck0xuh {
+padding: 0.5px;
+    flex-direction: column;
+      justify-items: center;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+}
+
+
+.css-hsi2ui { /* profile picture */
+    width: 350px; /* Set the desired width */
+    height: 350px; /* Set the desired height */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Hides any overflow */
+    position: relative; /* Allows for absolute positioning of pseudo-elements */
+}
+
+.css-hsi2ui:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid transparent; /* Creates a border that is hidden */
+    border-radius: 50%; /* Matches the circular shape */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a stylish shadow effect */
+}
+
+/* Edit profile button */
+.css-1x04uxb {
+    width: 350px; /* Set the desired width */
+    height: 30px; /* Set the desired height */
+    font-family: 'Shadows Into Light', cursive; /* Change font to Shadows Into Light */
+    background-color: #003366; /* Initial dark blue color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.css-1x04uxb:hover {
+    background-color: #66b2ff; /* Light blue color on hover */
+}
+
+.css-1x04uxb:active {
+    background-color: #033669; /* Darker blue when clicked */
+}
+
+/* Image styles */
+img {
+    filter: grayscale(150%);
+    -webkit-filter: grayscale(150%);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Shadow on hover */
+}
+
+/* Gradient border */
+.css-1lgnt2x {
+    border-style: solid; /* Set the border style */
+    border-image: linear-gradient(to right, #003366, #66b2ff) 1; /* Gradient from dark blue to light blue */
+}
+
+/* Additional styles------------- character bio preview on bot cards, tags on bot cards (excluding limitless tag), bot names  */
+.css-96l1id, 
+.css-x2gqu0,
+.css-1ifv49 {
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff; /* White text color */
+}
+
+.css-wexxj8 { /* chat count ribbon */
+    font-family: 'Shadows Into Light', cursive; /* Change to Shadows Into Light font */
+    color: #003366; /* Dark blue text color */
+    background-color: #ffffff; /* White background color */
+    padding: 10px; /* Optional: adds some padding for better spacing */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+.Btn { /* follow button */
+    font-family: 'Shadows Into Light', cursive; /* Change font to Shadows Into Light */
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    background-color: #003366; /* Dark blue background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: 100%;
+}
+
+.Btn:active {
+    background-color: #01488f; /* Darker blue when clicked */
+}
+
+.Btn:hover {
+    background-color: #012d59; /* Lighter blue on hover */
+}
+
+.css-x2gqu0 {
+   font-family: 'Shadows Into Light', cursive; /* Change font to Shadows Into Light */
+    font-style: italic;
+    text-align: center;
+    background-color: #003366; /* Dark purple background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for 
+
+}
+
+   .css-1ylu7un {
+font-family: 'Shadows Into Light', cursive; /* Change font to Shadows Into Light */
+    font-style: italic;
+    text-align: center;
+    background-color: #003366; /* Dark purple background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; 
+
+}
+ .css-0 { /* character */
+    background: #003366 !important; /* Gradient from dark purple to light purple */
+    color: #ffffff; /* Set text color to white for contrast */
+    border: 2px solid #003366; /* Add a dark purple border */
+    border-radius: 10px; /* Rounded corners for a smoother look */
+    padding: 15px; /* Add padding for better spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    font-family: 'Shadows Into Light', cursive; /* Use Shadows Into Light font */
+    transition: transform 0.3s ease; /* smooth transition for hover effect */
+}
+
+.css-0:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.css-1s5evre { /* Bot Card Colors */
+background-color: #000000;
+}
+
+.css-rioh04{ /* bot image */
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+
+img.css-19ihot3 { /* Changing the Star in Bot Cards */
+  position: absolute;
+  /* Positioning image -- will vary for each person so play around */
+  right: -35px;
+  top: -30px;
+  height: 55px; /* Resize as you want */
+  width: auto;
+  content: url("https://files.catbox.moe/uokpdr.png");
+}
+
+.css-c0nfge {
+    background-color: #42a1ff; /* Bright red background for visibility */
+    color: #ffffff; /* White text color for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Adequate padding for better touch targets */
+    font-family: 'Shadows Into Light', cursive; /* Use Shadows Into Light font */
+    font-size: 16px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+.css-c0nfge:hover {
+    background-color: #198dff; /* Darker red on hover for feedback */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.css-c0nfge:active {
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+
+.css-1enp3j4 {
+    background-color: #007bff; /* Bright blue background for visibility */
+    color: #ffffff; /* White text color for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 12px 24px; /* Adequate padding for better touch targets */
+    font-family: 'Shadows Into Light', cursive; /* Use Shadows Into Light font */
+    font-size: 18px; /* Increase font size for better readability */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+.css-1enp3j4:hover {
+    background-color: #0056b3; /* Darker blue on hover for feedback */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.css-1enp3j4:active {
+    transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+.css-xi606m {
+    background-color: #f0f8ff; /* Light blue background for visibility */
+    color: #333333; /* Dark text color for contrast */
+    border: 2px solid #007bff; /* Blue border to match the theme */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px 15px; /* Adequate padding for better spacing */
+    font-family: 'Shadows Into Light', cursive; /* Use Shadows Into Light font */
+    font-size: 16px; /* Increase font size for better readability */
+    font-weight: bold; /* Make the text bold for emphasis */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.css-xi606m:hover {
+    transform: scale(1.05); /* Slightly enlarge the text on hover */
+}
+
+.css-1duo6l5 {
+    background-color: #f5f5f5; /* Light grey background for a soft appearance */
+    color: #333333; /* Dark text color for contrast */
+    border: 1px solid #cccccc; /* Light grey border for definition */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 20px; /* Adequate padding for better spacing */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-size: 16px; /* Standard font size for readability */
+    margin: 15px 0; /* Margin to separate from other elements */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.css-1duo6l5:hover {
+    transform: scale(1.02); /* Slightly enlarge the box on hover */
+}
+
+
+.css-2sm9yd {
+    visibility: hidden; /* Hide the original 'Public Characters' */
+    position: relative; /* Needed for centering the :after pseudo-element */
+}
+
+.css-2sm9yd:after {
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+    content: "CHARACTERS";
+    color: rgb(51, 221, 255);
+    text-shadow: 0px 0px 15px rgba(51, 221, 255, 0.7); /* Improved shadow */
+    display: block; /* Allows centering */
+    width: 100%; /* Full width */
+    text-align: center; /* Centers text horizontally */
+    visibility: visible;
+    position: absolute;
+    top: 0; /* Adjust this if needed to fine-tune positioning */
+    left: 0;
+    right: 0;
+}
+
+
+.css-byjy2f, .css-13cymwt-control, .css-1n2in4t, .css-1dimb5e {
+    font-family: 'Shadows Into Light', cursive; /* Apply font */
+    color: rgb(51, 221, 255); /* Text color */
+    text-shadow: 0px 0px 15px rgba(51, 221, 255, 0.7); /* Glowing effect */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark translucent background */
+    border: 1px solid rgba(51, 221, 255, 0.5); /* Slight border with color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for menu items */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Drop shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover transitions */
+}
+
+.css-byjy2f, .css-13cymwt-control, .css-1n2in4t, .css-1dimb5e:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker on hover */
+    border-color: rgb(51, 221, 255); /* Highlight border on hover */
+}
+
+.css-byjy2f, .css-13cymwt-control, .css-1n2in4t, .css-1dimb5e li {
+    padding: 8px 15px; /* Space between items */
+    list-style-type: none; /* Remove default bullet points */
+}
+
+.css-byjy2f, .css-13cymwt-control, .css-1n2in4t, .css-1dimb5e li:hover {
+    background-color: rgba(51, 221, 255, 0.1); /* Highlight on hover */
+    cursor: pointer; /* Pointer to show it's clickable */
+}
+
+.box {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  width: max;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00f; /* Bright blue */
+  text-shadow: 0 0 5px rgba(0, 0, 255, 0.8);
+}
+
+
+</style>
+
+<br>
+<hr>
+<br>
+
+<div class="box">
+  <h1 class="chakra-heading css-1dklj6k" style="text-align:center">
+    <a rel="noopener noreferrer nofollow" href="https://docs.google.com/forms/d/e/1FAIpQLScCtus6Ws4W1Y-Bayk69nJN9L8WF34mHxFDHUaS2sNLxqiOvg/viewform?usp=sf_link">Bot Requests Link</a>
+  </h1>
+</div>
+<br>
+<div style="text-align:center;font-family:'Shadows Into Light', cursive"><span style="color:rgb(51, 221, 255 );text-shadow:0px 0px 15px"><strong>I will add more details later... </strong></span><br> <br><br>
+
+
+ </div>
+
+

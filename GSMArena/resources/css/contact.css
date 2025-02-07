@@ -1,0 +1,53 @@
+/* Style Contact page css  */
+
+.review-background {
+    background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/contact-hlr.jpg');
+    background-size: cover; /* or 'contain' depending on your needs */
+    background-position: center;
+}
+
+.icon-count {
+    position: absolute;
+    right: 4px;
+    top: 3px; /* Added to control vertical positioning */
+}
+
+.module-phones-link img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.image-gallery {
+    display: none;
+}
+
+.top-row, .bottom-row, .left-column, .right-column, .multipic {
+    display: flex;
+    justify-content: space-between; /* Add flexbox properties as needed */
+    align-items: center; /* Example: center-align items */
+}
+
+.gbutton {
+    cursor: pointer;
+}
+
+.permanent {
+    display: none;
+}
+
+.main-menu-list a[href*="{{ route('deals') }}"],
+.main-menu-list a[href*="{{ route('merch') }}"] {
+    position: relative;
+}
+
+.main-menu-list a[href*="{{ route('merch') }}"] .icon-count {
+    top: 3px;
+    right: 5px;
+}
+
+#topAdv > div {
+    height: 90px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}

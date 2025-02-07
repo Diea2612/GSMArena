@@ -1,0 +1,628 @@
+ /* Style phoneFinder page css  */
+
+
+ /* Hide iframes */
+ iframe[name="__uspapiLocator"],
+ iframe[name="__tcfapiLocator"] {
+     display: none;
+ }
+
+ /* Autocomplete styles */
+ .autocomplete {
+     position: relative;
+ }
+
+ .autocomplete-search {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .autocomplete-small {
+     font-size: small;
+ }
+
+ .autocomplete-hide {
+     display: none;
+ }
+
+ .reviews-results,
+ .phone-results,
+ .news-results {
+     float: left;
+ }
+
+ .autocomplete-desc {
+     font-weight: bold;
+ }
+
+ .permanent {
+     display: none;
+ }
+
+ /* Search buttons */
+ .search-buttons {
+     display: flex;
+     margin-top: 10px;
+ }
+
+ .search-buttons .go,
+ .search-buttons .advanced {
+     margin-right: 10px;
+     text-decoration: none;
+ }
+
+ /* Login icon styles */
+ .login-icon {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ .icon-count {
+     position: relative;
+     right: 4px;
+ }
+
+ /* List styles */
+ li {
+     list-style-type: none;
+ }
+
+ li a {
+     position: relative;
+     text-decoration: none;
+ }
+
+ /* Additional styles to match inline styles */
+ .icon-count {
+     top: 3px;
+     right: 5px;
+ }
+
+
+ /* General styles for the review background */
+ .review-background {
+     background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/phonefinder-hlr.jpg');
+     background-size: 100%;
+ }
+
+ /* Container for the top div */
+ .top-container {
+     height: 90px;
+     overflow: hidden;
+     padding: 0;
+     margin: 0;
+ }
+
+ /* Clearfix for floated elements */
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ /* Label styles */
+ label {
+     display: none; /* Hide labels */
+ }
+
+ /* Select styles */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Dropdown button styles */
+ .btn-group.bootstrap-select {
+     display: inline-block;
+ }
+
+ /* Dropdown menu styles */
+ .dropdown-menu {
+     display: none; /* Hide dropdown menu by default */
+ }
+
+ /* Show dropdown menu on button click */
+ .btn.dropdown-toggle:focus + .dropdown-menu,
+ .btn.dropdown-toggle:hover + .dropdown-menu {
+     display: block; /* Show dropdown on hover or focus */
+ }
+
+ /* Styles for the options in the dropdown */
+ .dropdown-menu.inner {
+     max-height: 200px; /* Limit height of dropdown */
+     overflow-y: auto; /* Enable scrolling */
+ }
+
+ /* Styles for the option items */
+ .dropdown-menu.inner li {
+     padding: 5px 10px; /* Add padding to items */
+ }
+
+ /* Styles for the selected options */
+ .dropdown-menu.inner li a {
+     text-decoration: none; /* Remove underline from links */
+ }
+
+ /* Styles for the caret icon */
+ .caret {
+     margin-left: 5px; /* Space between text and caret */
+ }
+
+ /* Additional styles for the button */
+ .btn {
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+
+ /* styles.css */
+
+ /* Column styles */
+ .l-col {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ .l-col-1-4 {
+     width: 25%; /* 1/4 of the container */
+ }
+
+ .l-col-1-2 {
+     width: 50%; /* 1/2 of the container */
+ }
+
+ .mr10 {
+     margin-right: 10px; /* Right margin for spacing */
+ }
+
+ /* Dropdown button styles */
+ .btn-group.bootstrap-select {
+     display: inline-block;
+     margin-top: 5px; /* Space above dropdowns */
+ }
+
+ /* Dropdown menu styles */
+ .dropdown-menu {
+     display: none; /* Hide dropdown menu by default */
+ }
+
+ /* Show dropdown menu on button click */
+ .btn.dropdown-toggle:focus + .dropdown-menu,
+ .btn.dropdown-toggle:hover + .dropdown-menu {
+     display: block; /* Show dropdown on hover or focus */
+ }
+
+ /* Styles for the options in the dropdown */
+ .dropdown-menu.inner {
+     max-height: 200px; /* Limit height of dropdown */
+     overflow-y: auto; /* Enable scrolling */
+ }
+
+ /* Styles for the option items */
+ .dropdown-menu.inner li {
+     padding: 5px 10px; /* Add padding to items */
+ }
+
+ /* Styles for the selected options */
+ .dropdown-menu.inner li a {
+     text-decoration: none; /* Remove underline from links */
+ }
+
+ /* Styles for the caret icon */
+ .caret {
+     margin-left: 5px; /* Space between text and caret */
+ }
+
+ /* Additional styles for the button */
+ .btn {
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+ /* Hide labels */
+ label {
+     display: none; /* Hide labels */
+ }
+
+ /* Styles for the select elements */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+
+ /* styles.css */
+
+ /* Column styles */
+ .l-col {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ .l-col-1-2 {
+     width: 50%; /* 1/2 of the container */
+ }
+
+ .mr10 {
+     margin-right: 10px; /* Right margin for spacing */
+ }
+
+ /* Dropdown button styles */
+ .btn-group.bootstrap-select {
+     display: inline-block;
+     margin-top: 5px; /* Space above dropdowns */
+ }
+
+ /* Dropdown menu styles */
+ .dropdown-menu {
+     display: none; /* Hide dropdown menu by default */
+ }
+
+ /* Show dropdown menu on button click */
+ .btn.dropdown-toggle:focus + .dropdown-menu,
+ .btn.dropdown-toggle:hover + .dropdown-menu {
+     display: block; /* Show dropdown on hover or focus */
+ }
+
+ /* Styles for the options in the dropdown */
+ .dropdown-menu.inner {
+     max-height: 200px; /* Limit height of dropdown */
+     overflow-y: auto; /* Enable scrolling */
+ }
+
+ /* Styles for the option items */
+ .dropdown-menu.inner li {
+     padding: 5px 10px; /* Add padding to items */
+ }
+
+ /* Styles for the selected options */
+ .dropdown-menu.inner li a {
+     text-decoration: none; /* Remove underline from links */
+ }
+
+ /* Styles for the caret icon */
+ .caret {
+     margin-left: 5px; /* Space between text and caret */
+ }
+
+ /* Additional styles for the button */
+ .btn {
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+ /* Hide labels */
+ label {
+     display: none; /* Hide labels */
+ }
+
+ /* Styles for the select elements */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Slider styles */
+ .phonefinder-slider {
+     position: relative;
+     width: 100%; /* Full width */
+     margin: 10px 0; /* Margin for spacing */
+ }
+
+ .phonefinder-slider .slider-value {
+     position: absolute;
+     font-weight: bold; /* Bold text for slider values */
+ }
+
+ .phonefinder-slider .noUi-base {
+     background: #e0e0e0; /* Background for the slider */
+ }
+
+ .phonefinder-slider .noUi-origin {
+     background: #007bff; /* Color for the slider handle */
+ }
+
+ /* Framed styles */
+ .framed {
+     border: 1px solid #ccc; /* Border for framed sections */
+     border-radius: 5px; /* Rounded corners */
+     padding: 10px; /* Padding inside framed sections */
+     margin-bottom: 10px; /* Space below framed sections */
+ }
+
+ /* Clearfix for floated elements */
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ /* Column styles */
+ .l-col {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ .l-col-1-2 {
+     width: 50%; /* 1/2 of the container */
+ }
+
+ .mr10 {
+     margin-right: 10px; /* Right margin for spacing */
+ }
+
+ /* Dropdown button styles */
+ .btn-group.bootstrap-select {
+     display: inline-block;
+     margin-top: 5px; /* Space above dropdowns */
+ }
+
+ /* Dropdown menu styles */
+ .dropdown-menu {
+     display: none; /* Hide dropdown menu by default */
+ }
+
+ /* Show dropdown menu on button click */
+ .btn.dropdown-toggle:focus + .dropdown-menu,
+ .btn.dropdown-toggle:hover + .dropdown-menu {
+     display: block; /* Show dropdown on hover or focus */
+ }
+
+ /* Styles for the options in the dropdown */
+ .dropdown-menu.inner {
+     max-height: 200px; /* Limit height of dropdown */
+     overflow-y: auto; /* Enable scrolling */
+ }
+
+ /* Styles for the option items */
+ .dropdown-menu.inner li {
+     padding: 5px 10px; /* Add padding to items */
+ }
+
+ /* Styles for the selected options */
+ .dropdown-menu.inner li a {
+     text-decoration: none; /* Remove underline from links */
+ }
+
+ /* Styles for the caret icon */
+ .caret {
+     margin-left: 5px; /* Space between text and caret */
+ }
+
+ /* Additional styles for the button */
+ .btn {
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+ /* Hide labels */
+ label {
+     display: none; /* Hide labels */
+ }
+
+ /* Styles for the select elements */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Slider styles */
+ .phonefinder-slider {
+     position: relative;
+     width: 100%; /* Full width */
+     margin: 10px 0; /* Margin for spacing */
+ }
+
+ .phonefinder-slider .slider-value {
+     position: absolute;
+     font-weight: bold; /* Bold text for slider values */
+ }
+
+ .phonefinder-slider .noUi-base {
+     background: #e0e0e0; /* Background for the slider */
+ }
+
+ .phonefinder-slider .noUi-origin {
+     background: #007bff; /* Color for the slider handle */
+ }
+
+ /* Framed styles */
+ .framed {
+     border: 1px solid #ccc; /* Border for framed sections */
+     border-radius: 5px; /* Rounded corners */
+     padding: 10px; /* Padding inside framed sections */
+     margin-bottom: 10px; /* Space below framed sections */
+ }
+
+ /* Clearfix for floated elements */
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ /* Additional styles for IP certificate, back material, frame material, OS, OS version, chipset, card slot, and technology */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Styles for the noUi sliders */
+ .noUi-base {
+     background: #e0e0e0; /* Background for the slider */
+ }
+
+ .noUi-origin {
+     background: #007bff; /* Color for the slider handle */
+ }
+
+ /* Styles for the slider handles */
+ .noUi-handle {
+     background: #fff; /* Background for the slider handle */
+     border: 2px solid #007bff; /* Border for the slider handle */
+     border-radius: 50%; /* Round handles */
+     width: 20px; /* Width of the handle */
+     height: 20px; /* Height of the handle */
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+ /* styles.css */
+
+ /* Column styles */
+ .l-col {
+     display: inline-block;
+     vertical-align: top;
+ }
+
+ .l-col-1-2 {
+     width: 50%; /* 1/2 of the container */
+ }
+
+ .mr10 {
+     margin-right: 10px; /* Right margin for spacing */
+ }
+
+ /* Dropdown button styles */
+ .btn-group.bootstrap-select {
+     display: inline-block;
+     margin-top: 5px; /* Space above dropdowns */
+ }
+
+ /* Dropdown menu styles */
+ .dropdown-menu {
+     display: none; /* Hide dropdown menu by default */
+ }
+
+ /* Show dropdown menu on button click */
+ .btn.dropdown-toggle:focus + .dropdown-menu,
+ .btn.dropdown-toggle:hover + .dropdown-menu {
+     display: block; /* Show dropdown on hover or focus */
+ }
+
+ /* Styles for the options in the dropdown */
+ .dropdown-menu.inner {
+     max-height: 200px; /* Limit height of dropdown */
+     overflow-y: auto; /* Enable scrolling */
+ }
+
+ /* Styles for the option items */
+ .dropdown-menu.inner li {
+     padding: 5px 10px; /* Add padding to items */
+ }
+
+ /* Styles for the selected options */
+ .dropdown-menu.inner li a {
+     text-decoration: none; /* Remove underline from links */
+ }
+
+ /* Styles for the caret icon */
+ .caret {
+     margin-left: 5px; /* Space between text and caret */
+ }
+
+ /* Additional styles for the button */
+ .btn {
+     cursor: pointer; /* Change cursor to pointer */
+ }
+
+ /* Hide labels */
+ label {
+     display: none; /* Hide labels */
+ }
+
+ /* Styles for the select elements */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Slider styles */
+ .phonefinder-slider {
+     position: relative;
+     width: 100%; /* Full width */
+     margin: 10px 0; /* Margin for spacing */
+ }
+
+ .phonefinder-slider .slider-value {
+     position: absolute;
+     font-weight: bold; /* Bold text for slider values */
+ }
+
+ .phonefinder-slider .noUi-base {
+     background: #e0e0e0; /* Background for the slider */
+ }
+
+ .phonefinder-slider .noUi-origin {
+     background: #007bff; /* Color for the slider handle */
+ }
+
+ /* Framed styles */
+ .framed {
+     border: 1px solid #ccc; /* Border for framed sections */
+     border-radius: 5px; /* Rounded corners */
+     padding: 10px; /* Padding inside framed sections */
+     margin-bottom: 10px; /* Space below framed sections */
+ }
+
+ /* Clearfix for floated elements */
+ .clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ /* Additional styles for IP certificate, back material, frame material, OS, OS version, chipset, card slot, and technology */
+ .phonefinder-select {
+     display: none; /* Hide select elements */
+ }
+
+ /* Styles for the noUi sliders */
+ .noUi-base {
+     background: #e0e0e0; /* Background for the slider */
+ }
+
+ .noUi-origin {
+     background: #007bff; /* Color for the slider handle */
+ }
+
+ /* Styles for the slider handles */
+ .noUi-handle {
+     background: #fff; /* Background for the slider handle */
+     border: 2px solid #007bff; /* Border for the slider handle */
+     border-radius: 50%; /* Round handles */
+     width: 20px; /* Width of the handle */
+     height: 20px; /* Height of the handle */
+ }
+
+ /* Styles for the image gallery */
+ .image-gallery {
+     display: none; /* Hide image gallery by default */
+ }
+
+ .image-gallery .top-row {
+     display: flex; /* Flexbox for top row layout */
+     justify-content: space-between; /* Space between elements */
+ }
+
+ .image-gallery .buttons {
+     display: flex; /* Flexbox for button layout */
+ }
+
+ .image-gallery .gbutton {
+     margin-right: 5px; /* Space between buttons */
+ }
+
+ /* Styles for the image container */
+ .image-container {
+     position: relative; /* Position relative for absolute children */
+ }
+
+ .image-container .image {
+     width: 100%; /* Full width for images */
+     height: auto; /* Maintain aspect ratio */
+ }
+
+ /* Styles for the multipic section */
+ .multipic {
+     display: flex; /* Flexbox for multipic layout */
+ }
+
+ .multipic .left,
+ .multipic .right {
+     flex: 1; /* Equal space for left and right */
+ }
+
+ .multipic .lock {
+     cursor: pointer; /* Change cursor to pointer */
+ }

@@ -1,0 +1,102 @@
+import './bootstrap';
+import { createApp } from 'vue';
+
+// Importing components
+import HomeComponent from './components/GSMArena/home.vue';
+import ContactComponent from './components/GSMArena/contact.vue';
+import CoverageComponent from './components/GSMArena/coverage.vue';
+import DealsComponent from './components/GSMArena/deals.vue';
+import FeaturedComponent from './components/GSMArena/featured.vue';
+import NewsComponent from './components/GSMArena/news.vue';
+import PhoneFinderComponent from './components/GSMArena/phoneFinder.vue';
+import ReviewsComponent from './components/GSMArena/reviews.vue';
+import VideosComponent from './components/GSMArena/videos.vue';
+import BrandsComponent from './components/GSMArena/brands.vue';
+import RumorMillComponent from './components/GSMArena/rumorMill.vue';
+import AccountComponent from './components/GSMArena/account.vue';
+import RegisterComponent from './components/GSMArena/register.vue';
+import CompareComponent from './components/GSMArena/compare.vue';
+import FAQComponent from './components/GSMArena/FAQ.vue';
+import GlossaryComponent from './components/GSMArena/glossary.vue';
+import PrivacyComponent from './components/GSMArena/privacy.vue';
+import TermsComponent from './components/GSMArena/terms.vue';
+import ToolsComponent from './components/GSMArena/tools.vue';
+import PiccmpComponent from './components/GSMArena/piccmp.vue';
+import BatteryTestComponent from './components/GSMArena/batteryTest.vue';
+import GSMArenaLabComponent from './components/GSMArena/gsmarenaLab.vue';
+import TipUsComponent from './components/GSMArena/tipUs.vue';
+
+
+import ArenaEvComponent from '../components/ArenaEV/arenaEV.vue';
+import ArenaEvAboutUSComponent from '../components/ArenaEV/arenaEvAboutUS.vue';
+import ArenaEvCompareComponent from '../components/ArenaEV/arenaEvCompare.vue';
+import ArenaEvFinderComponent from '../components/ArenaEV/arenaEvFinder.vue';
+import ArenaEvNewsComponent from '../components/ArenaEV/arenaEvNews.vue';
+import ArenaEvRegisterComponent from '../components/ArenaEV/arenaEvRegister.vue';
+import ArenaEvReviewsComponent from '../components/ArenaEV/arenaEvReviews.vue';
+import ArenaEvTermsComponent from '../components/ArenaEV/arenaEvTerms.vue';
+
+
+
+import MerchComponent from '../components/Merch/merch.vue';
+import MerchAllProductsComponent from '../components/Merch/merchAllProducts.vue';
+import MerchCartComponent from '../components/Merch/merchCart.vue';
+
+
+
+
+// Importing router
+import router from './router/index.js';
+
+// Creating the Vue app
+const app = createApp({});
+
+// Registering components globally with consistent naming (using kebab-case)
+app.component('home-component', HomeComponent);
+app.component('contact-component', ContactComponent);
+app.component('coverage-component', CoverageComponent);
+app.component('deals-component', DealsComponent);
+app.component('featured-component', FeaturedComponent);
+app.component('news-component', NewsComponent);
+app.component('phone-finder-component', PhoneFinderComponent);
+app.component('reviews-component', ReviewsComponent);
+app.component('videos-component', VideosComponent);
+app.component('brands-component', BrandsComponent);
+app.component('rumor-mill-component', RumorMillComponent);
+app.component('account-component', AccountComponent);
+app.component('register-component', RegisterComponent);
+app.component('compare-component', CompareComponent);
+app.component('faq-component', FAQComponent);
+app.component('glossary-component', GlossaryComponent);
+app.component('privacy-component', PrivacyComponent);
+app.component('terms-component', TermsComponent);
+app.component('tools-component', ToolsComponent);
+app.component('piccmp-component', PiccmpComponent);
+app.component('battery-test-component', BatteryTestComponent);
+app.component('gsmarena-lab-component', GSMArenaLabComponent);
+app.component('tip-us-component', TipUsComponent);
+
+app.component('arena-ev-component', ArenaEvComponent);
+app.component('arena-ev-aboutUs-component', ArenaEvAboutUSComponent);
+app.component('arena-ev-compare-component', ArenaEvCompareComponent);
+app.component('arena-ev-finder-component', ArenaEvFinderComponent);
+app.component('arena-ev-news-component', ArenaEvNewsComponent);
+app.component('arena-ev-register-component', ArenaEvRegisterComponent);
+app.component('arena-ev-reviews-component', ArenaEvReviewsComponent);
+app.component('arena-ev-terms-component', ArenaEvTermsComponent);
+
+
+app.component('merch-component', MerchComponent);
+app.component('merch-allProducts-component', MerchAllProductsComponent);
+app.component('merch-cart-component', MerchCartComponent);
+
+
+
+
+
+
+// Using the router
+app.use(router);
+
+// Mounting the app to the #app element
+app.mount('#app');

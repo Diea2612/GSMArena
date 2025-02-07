@@ -1,0 +1,172 @@
+#review-body .floatingHeader {
+      position: fixed;
+      top: 0;
+      visibility: hidden;
+    z-index: 1000;
+    }
+  
+.selector, .selector span { z-index:300; }
+
+#review-body .keywords {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  table-layout: fixed;
+  width: 100% !important;
+  font-size: 12px;
+}
+
+
+#review-body .keywords thead {
+  cursor: pointer;
+}
+
+#review-body .keywords thead tr th { 
+  font-weight: bold;
+  padding: 0px 0px 5px 0px;
+  background: #ededed !important;
+  position: relative;
+  border-left: 1px solid rgba(0,0,0,.07);
+  border-bottom: 2px solid rgba(0,0,0,.1);
+  vertical-align:middle;
+  font-size: 12px;
+  text-align:center;
+}
+
+#review-body .keywords thead tr th span { 
+  display: block;
+  padding:15px 5px 0 5px;
+  min-height: 40px;
+  position: relative;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff
+}
+
+
+
+#review-body .keywords thead tr th.headerSortUp, .keywords thead tr th.headerSortDown {
+  background: #000;
+}
+
+#review-body .keywords thead tr th.headerSortUp span {
+  background-image: url('https://fdn.gsmarena.com/vv/assets12/bat-img/down.png');
+}
+
+#review-body .keywords thead tr th.headerSortDown span {
+  background-image: url('https://fdn.gsmarena.com/vv/assets12/bat-img/up.png');
+}
+
+#review-body .keywords tbody tr td {
+  text-align: center;
+  padding: 8px 4px;
+  font-size: 13px;
+}
+
+#review-body .keywords td.lalign {
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+#review-body th.phone {
+  width: 150px !important;
+  text-align:left !important;
+}
+#review-body th.endurance {
+  width: 55px !important;
+}
+
+#review-body th.talktime,
+#review-body th.web,
+#review-body th.video,
+#review-body th.custom {
+  width: 45px !important;
+}
+
+#review-body .keywords th img {
+  left: 13px; 
+  top: 3px; 
+  position: absolute; 
+  width: 55px; 
+  margin-bottom: 4px;
+  padding-bottom:5px;
+  opacity: .1;
+}
+
+#review-body .keywords thead th.phone img { left: 47%; } 
+#review-body .keywords thead th.phone span { position: relative; top:-8px; 
+  background-position: 96% 25%;}
+
+#review-body .keywords tr:hover td { background: #fefefe !important; }
+
+#review-body .keywords tr:hover td:nth-child(5n+2) { background: #c24638 !important; }
+
+#review-body .keywords tbody td:nth-child(5n+2) { 
+  background: #B23F33; 
+  border-top: 1px solid #a83d31;
+  border-bottom: 1px solid #a83d31;
+  display: block;
+}
+
+#review-body .keywords tbody td:nth-child(5n+2) a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+
+#review-body .keywords tbody td:nth-child(5n+6) b { color: #666666; font-size: 15px}
+
+#review-body .floatingHeader th.phone {
+  width: 284px !important;
+  text-align:left !important;
+}
+#review-body .floatingHeader th.endurance {
+  width: 103px !important;
+}
+
+#review-body .floatingHeader th.talktime,
+#review-body .floatingHeader th.web,
+#review-body .floatingHeader th.video,
+#review-body .floatingHeader th.custom {
+  width: 85px !important;
+}
+
+#review-body .keywords tbody tr.selected td {
+  background: #ddd;
+}
+ #review-body .keywords tbody tr.selected td a { 
+  color: #444;
+ }
+
+ #review-body .keywords tbody tr.selected td:nth-child(5n+2) { 
+  background: #bf4537; 
+  border-top: 1px solid #a83d31;
+  border-bottom: 1px solid #a83d31;
+}
+
+#review-body .keywords tbody tr.selected td:nth-child(5n+2) a {
+  color: white;
+}
+
+#sliders table { margin-bottom: 10px; }
+
+.adv banner-mpu, .ad-label, #div-gpt-ad-300x250atfgsmarenadesktop-0 {
+  height:250px; width:300px;
+}
+
+#unic-gdpr {
+display:none;cursor:pointer;
+}
+
+#unic-ccpa {
+  display:none;cursor:pointer;
+}
+
+.image-gallery{
+  display: none;
+}
+
+.map {
+  display: none;
+}

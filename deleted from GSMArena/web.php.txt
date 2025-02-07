@@ -1,0 +1,201 @@
+<?php
+
+use App\Http\Controllers\GSMArenaControllers\{
+    BrandsController, ContactController, CoverageController, DealsController, 
+    DevicesController, FeaturedController, HomeController, NewsController, PhoneFinderController, PhotosController, ReviewsController, 
+    RumorMillController, VideosController, UserController, CompareController, 
+    TermsController, ToolsController, PrivacyController, GlossaryController, FAQController, TipUsController
+};
+
+use App\Http\Controllers\ArenaEVControllers\{
+    ArenaEVController, ArenaEVAboutUsController, ArenaEVCompareController, ArenaEVFinderController, ArenaEVNewsController, ArenaEVRegisterController, ArenaEVReviewsController, ArenaEVTermsController
+};
+
+use App\Http\Controllers\MerchControllers\{
+    MerchController, MerchAllProductsController, MerchCartController
+};
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|----------------------------------------------------------------------
+| Web Routes
+|----------------------------------------------------------------------
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+*/
+
+// User Routes Group
+Route::prefix('user')->name('user.')->group(function () {
+    Route::get('/', [UserController::class, 'index'])->name('index');
+    Route::get('/register', [UserController::class, 'register'])->name('register');
+    Route::post('/store', [UserController::class, 'store'])->name('store');
+    Route::get('/login', [UserController::class, 'login'])->name('login');
+    Route::post('/authenticate', [UserController::class, 'authenticate'])->name('authenticate');
+    Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+    Route::get('/account', [UserController::class, 'account'])->name('account')->middleware('auth');
+});
+
+// HomeController Routes
+Route::get('/', [HomeController::class, 'index']);
+Route::post('/home/update', [HomeController::class, 'update']);
+
+// DealsController Routes
+Route::get('/deals/region/{region}', [DealsController::class, 'getDealsByRegion']);
+Route::get('/deals/regions', [DealsController::class, 'getAvailableRegions']);
+
+// NewsController Routes
+Route::get('/news', [NewsController::class, 'index']);
+Route::get('/news/category/{category}', [NewsController::class, 'getByCategory']);
+Route::get('/news/search', [NewsController::class, 'search']);
+Route::get('/news/featured', [NewsController::class, 'getFeatured']);
+Route::post('/news', [NewsController::class, 'store']);
+Route::put('/news/{id}', [NewsController::class, 'update']);
+Route::delete('/news/{id}', [NewsController::class, 'destroy']);
+
+// PhoneFinderController Routes
+Route::get('/phone-finder', [PhoneFinderController::class, 'index']);
+Route::get('/phone-finder/brand/{brand}', [PhoneFinderController::class, 'searchByBrand']);
+Route::get('/phone-finder/model/{model}', [PhoneFinderController::class, 'searchByModel']);
+Route::get('/phone-finder/release-date', [PhoneFinderController::class, 'filterByReleaseDate']);
+Route::get('/phone-finder/specifications', [PhoneFinderController::class, 'searchBySpecifications']);
+
+// ReviewsController Routes
+Route::get('/reviews/phone/{phoneId}', [ReviewsController::class, 'getReviewsByPhone']);
+Route::get('/reviews/user/{userId}', [ReviewsController::class, 'getReviewsByUser']);
+Route::get('/reviews/search', [ReviewsController::class, 'searchReviewsByTitle']);
+Route::get('/reviews/average-rating', [ReviewsController::class, 'averageRating']);
+Route::post('/reviews', [ReviewsController::class, 'store']);
+Route::put('/reviews/{id}', [ReviewsController::class, 'update']);
+Route::delete('/reviews/{id}', [ReviewsController::class, 'destroy']);
+
+// VideosController Routes
+Route::get('/videos', [VideosController::class, 'index']);
+Route::get('/videos/user/{userId}', [VideosController::class, 'getVideosByUser']);
+Route::get('/videos/search', [VideosController::class, 'searchVideosByTitle']);
+Route::get('/videos/duration', [VideosController::class, 'getVideosByDuration']);
+Route::post('/videos', [VideosController::class, 'store']);
+Route::put('/videos/{id}', [VideosController::class, 'update']);
+Route::delete('/videos/{id}', [VideosController::class, 'destroy']);
+
+// FeaturedController Routes
+Route::get('/featured', [FeaturedController::class, 'index']);
+Route::post('/featured', [FeaturedController::class, 'store']);
+Route::get('/featured/author/{author}', [FeaturedController::class, 'getByAuthor']);
+Route::get('/featured/after-date', [FeaturedController::class, 'getAfterDate']);
+
+// ContactController Routes
+Route::get('/contact', [ContactController::class, 'showContactForm']);
+Route::post('/contact/submit', [ContactController::class, 'submitContactForm']);
+Route::get('/contact/tip-us', [ContactController::class, 'getTipUsFormLink']);
+Route::get('/contact/support-email', [ContactController::class, 'getSupportEmail']);
+Route::get('/contact/advertising-link', [ContactController::class, 'getAdvertisingLink']);
+
+// CoverageController Routes
+Route::get('/coverage', [CoverageController::class, 'getCoverageDetails']);
+Route::get('/coverage/countries', [CoverageController::class, 'getAllCountries']);
+
+// BrandsController Routes
+Route::get('/brands', [BrandsController::class, 'index']);
+Route::get('/brands/{id}', [BrandsController::class, 'show']);
+Route::post('/brands', [BrandsController::class, 'store']);
+Route::put('/brands/{id}', [BrandsController::class, 'update']);
+Route::delete('/brands/{id}', [BrandsController::class, 'destroy']);
+Route::get('/brands/{id}/device-count', [BrandsController::class, 'getDeviceCount']);
+
+// RumorMillController Routes
+Route::get('/rumors', [RumorMillController::class, 'index']);
+Route::get('/rumors/phone/{phone}', [RumorMillController::class, 'getRumorsByPhone']);
+Route::get('/rumors/search', [RumorMillController::class, 'searchRumorsByTitle']);
+Route::get('/rumors/status/{status}', [RumorMillController::class, 'getRumorsByStatus']);
+Route::post('/rumors', [RumorMillController::class, 'store']);
+Route::put('/rumors/{id}', [RumorMillController::class, 'update']);
+Route::delete('/rumors/{id}', [RumorMillController::class, 'destroy']);
+
+// DevicesController Routes
+Route::resource('devices', DevicesController::class);
+Route::get('/devices/region/{region}', [DevicesController::class, 'getDevicesByRegion'])->name('devices.byRegion');
+Route::get('/devices/search', [DevicesController::class, 'searchDevices'])->name('devices.search');
+Route::get('/devices/all', [DevicesController::class, 'getAllDevices'])->name('devices.all');
+Route::get('/devices/device-count', [DevicesController::class, 'deviceCount'])->name('devices.deviceCount');
+
+// TipUsController Routes
+Route::get('/tip-us', [TipUsController::class, 'showForm']);
+Route::post('/tip-us/submit', [TipUsController::class, 'submitTip']);
+
+// PhotosController Routes
+Route::get('/photos', [PhotosController::class, 'index']);
+Route::get('/photos/{id}', [PhotosController::class, 'show']);
+
+// ArenaEVController Routes
+Route::get('/arenaev', [ArenaEVController::class, 'index']);
+Route::post('/arenaev', [ArenaEVController::class, 'store']);
+
+// ArenaEVAboutUsController Routes
+Route::get('/arenaev/about-us', [ArenaEVAboutUsController::class, 'index'])->name('arenaev.about.index');
+Route::get('/arenaev/about-us/view/{id}', [ArenaEVAboutUsController::class, 'view'])->name('arenaev.about.view');
+Route::get('/arenaev/about-us/edit/{id}', [ArenaEVAboutUsController::class, 'edit'])->name('arenaev.about.edit');
+Route::put('/arenaev/about-us/update/{id}', [ArenaEVAboutUsController::class, 'update'])->name('arenaev.about.update');
+
+// ArenaEVCompareController Routes
+Route::get('/arenaev/compare', [ArenaEVCompareController::class, 'index'])->name('arenaev.compare.index');
+Route::post('/arenaev/compare', [ArenaEVCompareController::class, 'compare'])->name('arenaev.compare');
+Route::get('/arenaev/compare/data', [ArenaEVCompareController::class, 'getComparisonData'])->name('arenaev.compare.data');
+
+// ArenaEVFinderController Routes
+Route::get('/arenaev/finder', [ArenaEVFinderController::class, 'index'])->name('arenaev.finder.index');
+Route::get('/arenaev/finder/search', [ArenaEVFinderController::class, 'search'])->name('arenaev.finder.search');
+
+// ArenaEVNewsController Routes
+Route::get('/arenaev/news', [ArenaEVNewsController::class, 'index'])->name('arenaev.news.index');
+Route::get('/arenaev/news/view/{id}', [ArenaEVNewsController::class, 'view'])->name('arenaev.news.view');
+Route::post('/arenaev/news', [ArenaEVNewsController::class, 'store'])->name('arenaev.news.store');
+
+// ArenaEVRegisterController Routes
+Route::get('/arenaev/register', [ArenaEVRegisterController::class, 'showForm'])->name('arenaev.register.show');
+Route::post('/arenaev/register', [ArenaEVRegisterController::class, 'register'])->name('arenaev.register.submit');
+
+// ArenaEVReviewsController Routes
+Route::get('/arenaev/reviews', [ArenaEVReviewsController::class, 'index'])->name('arenaev.reviews.index');
+Route::get('/arenaev/reviews/view/{id}', [ArenaEVReviewsController::class, 'view'])->name('arenaev.reviews.view');
+Route::post('/arenaev/reviews', [ArenaEVReviewsController::class, 'store'])->name('arenaev.reviews.store');
+
+// ArenaEVTermsController Routes
+Route::get('/arenaev/terms', [ArenaEVTermsController::class, 'index'])->name('arenaev.terms.index');
+Route::get('/arenaev/terms/view/{id}', [ArenaEVTermsController::class, 'view'])->name('arenaev.terms.view');
+
+// MerchController Routes
+Route::get('/merch', [MerchController::class, 'index'])->name('merch.index');
+Route::post('/merch', [MerchController::class, 'store'])->name('merch.store');
+
+// MerchAllProductsController Routes
+Route::get('/merch/products', [MerchAllProductsController::class, 'index'])->name('merch.products.index');
+
+// MerchCartController Routes
+Route::get('/merch/cart', [MerchCartController::class, 'show'])->name('merch.cart.show');
+Route::post('/merch/cart/add', [MerchCartController::class, 'addToCart'])->name('merch.cart.add');
+Route::delete('/merch/cart/remove/{id}', [MerchCartController::class, 'removeFromCart'])->name('merch.cart.remove');
+
+// PrivacyController Routes
+Route::get('/privacy', [PrivacyController::class, 'index']);
+
+// TermsController Routes
+Route::get('/terms', [TermsController::class, 'index']);
+
+// ToolsController Routes
+Route::get('/tools', [ToolsController::class, 'index']);
+
+// FAQController Routes
+Route::get('/faq', [FAQController::class, 'index']);
+Route::get('/faq/{id}', [FAQController::class, 'show']);
+
+// GlossaryController Routes
+Route::get('/glossary', [GlossaryController::class, 'index']);
+Route::get('/glossary/{term}', [GlossaryController::class, 'show']);
+
+// Route to return privacy policy
+Route::get('/privacy-policy', [PrivacyController::class, 'index']);
+
+// Route to return terms and conditions
+Route::get('/terms-and-conditions', [TermsController::class, 'index']);

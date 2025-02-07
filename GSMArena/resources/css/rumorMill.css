@@ -1,0 +1,53 @@
+/* General container styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Autocomplete container */
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Image gallery styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-container {
+    flex: 1 1 300px; /* Allow images to grow and shrink */
+    margin: 10px;
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.search-buttons a {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.search-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Hide elements by default */
+.autocomplete-hide {
+    display: none;
+}

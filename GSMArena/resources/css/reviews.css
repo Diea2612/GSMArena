@@ -1,0 +1,282 @@
+ /* Style reviews page css  */
+
+ /* styles.css */
+
+ /* General styles for iframes */
+ iframe {
+     display: none; /* Hide iframes by default */
+ }
+
+ /* Autocomplete styles */
+ .autocomplete {
+     position: relative; /* Position relative for absolute children */
+     width: 100%; /* Full width */
+ }
+
+ .autocomplete-search {
+     background-color: #fff; /* White background for search */
+     border: 1px solid #ccc; /* Light gray border */
+     border-radius: 5px; /* Rounded corners */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+     z-index: 1000; /* Ensure it appears above other elements */
+ }
+
+ .autocomplete-desc {
+     font-weight: bold; /* Bold text for descriptions */
+     margin: 10px 0; /* Margin for spacing */
+ }
+
+ .reviews-results, .news-results {
+     float: left; /* Float left for layout */
+     width: 48%; /* Adjust width for layout */
+ }
+
+ .phone-results {
+     width: 100%; /* Full width for phone results */
+ }
+
+ .autocomplete ul {
+     list-style: none; /* Remove bullet points */
+     padding: 0; /* Remove padding */
+     margin: 0; /* Remove margin */
+ }
+
+ .autocomplete li {
+     padding: 5px 10px; /* Padding for list items */
+ }
+
+ .more-news-link {
+     color: #007bff; /* Link color */
+     text-decoration: none; /* Remove underline */
+ }
+
+ .more-news-link:hover {
+     text-decoration: underline; /* Underline on hover */
+ }
+
+ /* Search buttons styles */
+ .search-buttons {
+     margin-top: 10px; /* Space above buttons */
+ }
+
+ .search-buttons a {
+     display: inline-block; /* Inline block for buttons */
+     padding: 10px 15px; /* Padding for buttons */
+     margin-right: 5px; /* Space between buttons */
+     background-color: #007bff; /* Button background color */
+     color: #fff; /* Button text color */
+     border-radius: 5px; /* Rounded corners */
+     text-decoration: none; /* Remove underline */
+ }
+
+ .search-buttons a:hover {
+     background-color: #0056b3; /* Darker blue on hover */
+ }
+
+ /* Login icon styles */
+ .login-icon {
+     display: flex; /* Flexbox for icon and text */
+     align-items: center; /* Center vertically */
+     color: #007bff; /* Link color */
+     text-decoration: none; /* Remove underline */
+ }
+
+ .login-icon i {
+     margin-right: 5px; /* Space between icon and text */
+ }
+
+ /* Deals and Merch links */
+ li a {
+     position: relative; /* Position relative for icon count */
+     color: #007bff; /* Link color */
+     text-decoration: none; /* Remove underline */
+ }
+
+ li a:hover {
+     text-decoration: underline; /* Underline on hover */
+ }
+
+ .icon-count {
+     position: absolute; /* Position absolute for icon count */
+     top: 0; /* Align to top */
+     right: 5px; /* Space from right */
+     font-size: 0.8em; /* Smaller font size */
+     color: red; /* Red color for new indicator */
+ }
+
+ /* Review background */
+ .review-background {
+     background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/reviews-hlr.jpg');
+     background-size: cover; /* Cover the entire area */
+     height: 90px; /* Fixed height */
+     overflow: hidden; /* Hide overflow */
+     padding: 0; /* No padding */
+     margin: 0; /* No margin */
+ }
+
+ /* styles.css */
+
+/* Submit button styles */
+.submit.button.button-small {
+    padding: 5px 10px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit.button.button-small:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Ad container styles */
+#div-gpt-ad-300x250atfgsmarenadesktop-0 {
+    height: 250px; /* Fixed height for ad */
+    width: 300px; /* Fixed width for ad */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* Module phones link styles */
+.module-phones-link {
+    display: block; /* Block display for links */
+    margin: 10px 0; /* Margin for spacing */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+}
+
+.module-phones-link img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Overflow container styles */
+div[style*="overflow:hidden;overflow-y:auto;max-height: 390px;"] {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 390px; /* Maximum height */
+    padding: 5px; /* Padding for content */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Module fit styles */
+.module-fit.purple {
+    width: 100%; /* Full width */
+    table-layout: fixed; /* Fixed table layout */
+}
+
+.module-fit.purple td {
+    text-align: left; /* Left align text */
+}
+
+/* Rankings styles */
+.module-rankings .purple tbody tr:nth-child(odd) {
+    background-color: #fff2ee; /* Light background for odd rows */
+}
+
+/* styles.css */
+
+/* Ad container styles for 300x600 ad */
+#div-gpt-ad-300x600btfgsmarenadesktop-0 {
+    height: 600px; /* Fixed height for ad */
+    width: 300px; /* Fixed width for ad */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+/* GDPR and CCPA links */
+#unic-gdpr, #unic-ccpa {
+    display: none; /* Hide by default */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Image gallery styles */
+.image-gallery {
+    display: none; /* Hidden by default */
+    position: relative; /* Position relative for absolute children */
+    width: 100%; /* Full width */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-gallery .top-row {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    padding: 10px; /* Padding for top row */
+}
+
+.image-gallery .header {
+    display: flex; /* Flexbox for header layout */
+    align-items: center; /* Center items vertically */
+}
+
+.image-gallery .title {
+    font-size: 1.5em; /* Larger font size for title */
+    font-weight: bold; /* Bold title */
+}
+
+.image-gallery .buttons {
+    display: flex; /* Flexbox for button layout */
+    align-items: center; /* Center items vertically */
+}
+
+.gbutton {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.gbutton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Image container styles */
+.image-container {
+    position: relative; /* Position relative for absolute children */
+    width: 100%; /* Full width */
+}
+
+.image-container .image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Navigation buttons for images */
+.next-prev a {
+    display: inline-block; /* Inline block for navigation links */
+    padding: 5px; /* Padding for links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.next-prev a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Multipic styles */
+.multipic {
+    display: flex; /* Flexbox for multipic layout */
+}
+
+.multipic .left, .multipic .right {
+    flex: 1; /* Equal space for left and right */
+}
+
+.lock {
+    cursor: pointer; /* Pointer cursor for lock */
+}
+
+/* Favicon styles */
+img[src*="favicon.ico"] {
+    display: none !important; /* Hide favicon */
+    width: 1px !important; /* Set width to 1px */
+    height: 1px !important; /* Set height to 1px */
+}

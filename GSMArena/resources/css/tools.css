@@ -1,0 +1,106 @@
+.head-icon icon-login, .icon-count {
+	right:4px;
+}
+
+#topAdv, .ad-c-label {
+height: 90px; overflow: hidden; padding: 0; margin: 0;
+}
+
+.review-background {
+    background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/tools-hlr.jpg');
+    background-size: 100%;
+  }  
+
+  #review-body ul#lab-list {
+    padding: 0px;
+    margin:0px;
+    width: 100%;
+  }
+
+  #review-body #lab-list li {
+    width: 100%;
+    display: block;
+    clear:both;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+      border-bottom: 1px solid #eaeaea;
+  }
+
+  #review-body #lab-list li:hover {
+    border-bottom: 1px solid #dadada;
+  }
+
+  #review-body #lab-list li:last-child a {
+    border-bottom: none;
+  }
+
+  #review-body ul#lab-list li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 20px;
+  }
+
+  #review-body #lab-list a:hover {
+      color:#4B3C23;
+      background: #f8f8f8;
+  }
+
+
+
+  #review-body #lab-list li img {
+    float: left;
+    width: 100px;
+    top: 2px;
+    position: relative;
+    margin: 0 10px 0 0;
+  }
+
+  #review-body #lab-list li h3, #lab-list li p {
+    float: left;
+    width: 80%;
+    margin: 0;
+      padding: 0;
+  }
+
+
+  #review-body #lab-list li h3 {
+    color: #B23F33;
+      font: normal 18px 'Oswald', Arial, sans-serif;
+      padding-top: 3px;
+  }
+
+  #review-body #lab-list li p {
+      padding-bottom: 3px;
+  }
+
+  #review-body #lab-list li:last-child {
+    border-bottom: none;
+  }
+
+  .adv banner-mpu, .ad-label, #div-gpt-ad-300x250atfgsmarenadesktop-0 {
+  	height:250px; width:300px;
+  }
+
+    .adv banner-mpu, .ad-label, #div-gpt-ad-300x600btfgsmarenadesktop-0 {
+  	height:600px; width:300px;
+  }
+
+
+  #unic-gdpr {
+display:none;cursor:pointer;
+}
+
+#unic-ccpa {
+  display:none;cursor:pointer;
+}
+
+.image-gallery{
+  display: none;
+}
+
+.map {
+  display: none;
+}

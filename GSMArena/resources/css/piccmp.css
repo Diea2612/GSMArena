@@ -1,0 +1,64 @@
+.head-icon icon-login, .icon-count {
+	right:4px;
+}
+
+#topAdv, .ad-c-label {
+height: 90px; overflow: hidden; padding: 0; margin: 0;
+}
+
+.review-background {
+    background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/compare-photo-hlr.jpg');
+    background-size: 100%;
+  }  
+
+  #view {
+  	width: 62.8294px; height: 26.8175px; left: 168.585px; top: 136.591px;
+  }
+
+  #viewport1-inside, .viewport {
+  	transform: translate(-120px, -197px);
+  }
+
+  .tile zoom-bl {
+  	left: 0px; top: 0px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+  #tile-viewport1-0-1, .tile zoom-bl {
+left: 0px; top: 300px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+  #tile-viewport1-1-0, .tile zoom-bl {
+left: 400px; top: 0px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+  #tile-viewport1-1-1, .tile zoom-bl {
+  	left: 400px; top: 300px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+    #tile-viewport1-2-0, .tile zoom-bl {
+  	left: 800px; top: 0px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+  #tile-viewport1-2-1, .tile zoom-bl{
+  	left: 800px; top: 300px; max-width: 400px; max-height: 300px; visibility: hidden;
+  }
+
+  .compareSlotDropdown, #dropdown1, .cameraSelect {
+  	display: none;
+  }
+
+  #unic-gdpr {
+display:none;cursor:pointer;
+}
+
+#unic-ccpa {
+  display:none;cursor:pointer;
+}
+
+.image-gallery{
+  display: none;
+}
+
+.map {
+  display: none;
+}

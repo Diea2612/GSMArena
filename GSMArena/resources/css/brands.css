@@ -1,0 +1,151 @@
+/* Autocomplete container styles */
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 400px; /* Set a max width for better layout */
+    margin: 0 auto; /* Center the autocomplete box */
+}
+
+/* Description styles */
+.autocomplete-desc {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Results list styles */
+.autocomplete ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual list item styles */
+.autocomplete li {
+    margin: 5px 0;
+}
+
+/* Link styles */
+.more-news-link {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+
+.more-news-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Search buttons styles */
+.search-buttons {
+    display: flex;
+    justify-content: space-between; /* Space out buttons */
+    margin-top: 10px;
+}
+
+.search-buttons a {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.search-buttons a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Hide elements by default */
+.autocomplete-hide {
+    display: none;
+}
+
+/* Login icon styles */
+.login-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    margin: 10px;
+}
+
+.login-icon i {
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* List item styles */
+li {
+    list-style-type: none; /* Remove default list styling */
+    margin: 5px 0; /* Space between list items */
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    position: relative; /* For positioning the icon count */
+}
+
+li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Icon count styles */
+.icon-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px; /* Adjust font size for the count */
+    color: red; /* Color for the count */
+}
+
+/* Ad container styles */
+#div-gpt-ad-300x250atfgsmarenadesktop-0,
+#div-gpt-ad-300x600btfgsmarenadesktop-0 {
+    margin: 20px 0; /* Space around ads */
+    display: block; /* Ensure ads are block elements */
+}
+
+/* GDPR and CCPA links */
+#unic-gdpr,
+#unic-ccpa {
+    display: inline-block; /* Make them inline-block for better spacing */
+    margin: 10px;
+    color: #007bff; /* Link color */
+    cursor: pointer; /* Pointer cursor for clickable links */
+}
+
+/* Image gallery styles */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; /* Space around the gallery */
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between; /* Space between title and buttons */
+    align-items: center; /* Center items vertically */
+}
+
+.header .title {
+    font-size: 18px; /* Title font size */
+    font-weight: bold; /* Bold title */
+}
+
+/* Button styles in the image gallery */
+.gbutton {
+    background-color: #007bff; /* Button color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor for buttons */
+    margin-left: 5px; /* Space between buttons */
+}
+
+.gbutton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

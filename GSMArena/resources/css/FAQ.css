@@ -1,0 +1,45 @@
+.permanent {
+	display: none;
+}
+
+.icon-count {
+	right:4px;
+}
+
+#topAdv, .ad-c-label {
+height: 90px; overflow: hidden; padding: 0; margin: 0;
+}
+
+.review-background {
+    background-image: url('https://fdn.gsmarena.com/imgroot/static/headers/faq-hlr.jpg');
+    background-size: 100%;
+  }  
+
+#div-gpt-ad-300x250atfgsmarenadesktop-0 {
+	height:250px; width:300px;
+}
+
+#module module-phones module-latest, #section-heading {
+	overflow:hidden;overflow-y:auto;max-height: 390px;
+}
+
+#div-gpt-ad-300x600btfgsmarenadesktop-0 {
+	height:600px; width:300px;
+}
+
+
+#unic-gdpr {
+display:none;cursor:pointer;
+}
+
+#unic-ccpa {
+display:none;cursor:pointer;
+}
+
+.image-gallery{
+	display: none;
+}
+
+.map {
+	display: none;
+}

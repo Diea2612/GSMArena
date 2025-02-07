@@ -1,0 +1,90 @@
+import { createRouter, createWebHistory } from "vue-router";
+
+// Static imports for components
+import Home from '../components/GSMArena/home.vue';
+import News from '../components/GSMArena/news.vue';
+import Brands from '../components/GSMArena/brands.vue';
+import Contact from '../components/GSMArena/contact.vue';
+import Coverage from '../components/GSMArena/coverage.vue';
+import Deals from '../components/GSMArena/deals.vue';
+import Featured from '../components/GSMArena/featured.vue';
+import Reviews from '../components/GSMArena/reviews.vue';
+import RumorMill from '../components/GSMArena/rumorMill.vue'; // Corrected case
+import Videos from '../components/GSMArena/videos.vue';
+import PhoneFinder from '../components/GSMArena/phoneFinder.vue';
+import SignUp from '../components/GSMArena/register.vue';
+import Account from '../components/GSMArena/account.vue';
+import Compare from '../components/GSMArena/compare.vue';
+import Glossary from '../components/GSMArena/glossary.vue';
+import FAQ from '../components/GSMArena/FAQ.vue';
+import Privacy from '../components/GSMArena/privacy.vue';
+import Terms from '../components/GSMArena/terms.vue';
+import Tools from '../components/GSMArena/tools.vue';
+import BatteryTest from '../components/GSMArena/batteryTest.vue';
+import Piccmp from '../components/GSMArena/piccmp.vue';
+import GSMArenaLab from '../components/GSMArena/gsmarenaLab.vue';
+import NotFound from "../components/notFound.vue";
+import TipUs from "../components/tipUs.vue';
+
+
+// ArenaEV imports
+import ArenaEv from '../components/ArenaEV/arenaEV.vue';
+import ArenaEvAboutUS from '../components/ArenaEV/arenaEvAboutUS.vue';
+import ArenaEvCompare from '../components/ArenaEV/arenaEvCompare.vue';
+import ArenaEvFinder from '../components/ArenaEV/arenaEvFinder.vue';
+import ArenaEvNews from '../components/ArenaEV/arenaEvNews.vue';
+import ArenaEvRegister from '../components/ArenaEV/arenaEvRegister.vue';
+import ArenaEvReviews from '../components/ArenaEV/arenaEvReviews.vue';
+import ArenaEvTerms from '../components/ArenaEV/arenaEvTerms.vue';
+
+
+
+// Merch imports
+import Merch from  '../components/Merch/merch.vue';
+import MerchAllProducts from  '../components/Merch/merchAllProducts.vue';
+import MerchCart from  '../components/Merch/merchCart.vue';
+
+
+
+// Define routes
+const routes = [
+    { path: '/home', component: Home, name: 'home' },
+    { path: '/news', component: News, name: 'news' },
+    { path: '/brands', component: Brands, name: 'brands' },
+    { path: '/contact', component: Contact, name: 'contact' },
+    { path: '/coverage', component: Coverage, name: 'coverage' },
+    { path: '/deals', component: Deals, name: 'deals' },
+    { path: '/featured', component: Featured, name: 'featured' },
+    { path: '/reviews', component: Reviews, name: 'reviews' },
+    { path: '/rumor-mill', component: RumorMill, name: 'rumorMill' }, // Corrected path
+    { path: '/videos', component: Videos, name: 'videos' },
+    { path: '/phone-finder', component: PhoneFinder, name: 'phoneFinder' },
+    { path: '/register', component: SignUp, name: 'register' },
+    { path: '/account', component: Account, name: 'account' },
+    { path: '/compare', component: Compare, name: 'compare' },
+    { path: '/glossary', component: Glossary, name: 'glossary' },
+    { path: '/faq', component: FAQ, name: 'faq' }, // Standardized to lowercase
+    { path: '/privacy', component: Privacy, name: 'privacy' },
+    { path: '/terms', component: Terms, name: 'terms' },
+    { path: '/tools', component: Tools, name: 'tools' },
+    { path: '/battery-test', component: BatteryTest, name: 'batteryTest' }, // Added hyphen for consistency
+    { path: '/piccmp', component: Piccmp, name: 'piccmp' },
+    { path: '/gsmarena-lab', component: GSMArenaLab, name: 'gsmarenaLab' }, // Hyphenated for consistency
+    { path: '/tip-us', component: TipUs, name: 'tipUs' },
+
+    { path: '/arena-ev', component: ArenaEv, name: 'arenaEv' },
+  
+
+    { path: '/merch', component: Merch, name: 'merch' },
+
+
+    { path: '/:pathMatch(.*)*', component: NotFound, name: 'notFound' } // Catch-all route for 404
+];
+
+// Create router instance
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+});
+
+export default router;
